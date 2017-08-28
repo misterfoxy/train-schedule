@@ -17,7 +17,8 @@ $(document).ready(function(){
       name:name,
       place:destination,
       ftrain: firstTrain,
-      freq: rate
+      freq: rate,
+      stamp: firebase.database.ServerValue.TIMESTAMP
     }
     //upload train object to firebase
     database.ref().push(newLine);
